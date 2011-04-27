@@ -82,6 +82,9 @@ margin-bottom: 10px;
       </div> 
       </div> 
 </div>
+
+<p>
+<a href="/cgi-bin/commit_attachments.cgi" target="_blank">Commit attachments to repository</a>
  
 </body>
 
