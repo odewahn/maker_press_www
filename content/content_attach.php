@@ -20,7 +20,7 @@
   'uploader'       : '<?php echo $config["base_url"]; ?>uploadify/uploadify.swf',
   'script'         : '<?php echo $config["base_url"]; ?>uploadify/uploadify.php',
   'cancelImg'      : '<?php echo $config["base_url"]; ?>uploadify/cancel.png',
-  'folder'         : '<?php echo $config["base_url"]; ?>/uploads',
+  'folder'         : 'uploads',
   'multi'          : true,
   'auto'           : true,
   'fileExt'        : '*.jpg;*.gif;*.png',

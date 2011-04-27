@@ -3,8 +3,8 @@
 $config = array (
    "site_title" => "Maker Press Authoring Tool",
    "logo_url" => "logo.png",
-   "base_url" => "http://127.0.0.1/~odewahn/maker_press/",
-   "gollum" => "http://localhost:4567"
+   "base_url" => "http://50.19.110.122/maker_press/",
+   "gollum" => "http://50.19.110.122:4567"
 );
 ?>
 
