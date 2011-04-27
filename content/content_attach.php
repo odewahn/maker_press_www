@@ -3,8 +3,6 @@
 ?>
 
 
-
-
 <head>
 <link href="<?php echo $config["base_url"]; ?>uploadify/uploadify.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="<?php echo $config["base_url"]; ?>uploadify/jquery-1.4.2.min.js"></script>
