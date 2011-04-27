@@ -5,7 +5,7 @@
    $page = $_GET["page"];
 
    if (strlen($page) == 0) { $page = "home"; }
-   $content_page_url = $config["base_url"]."action_show.php?page=".$page;
+   $content_page_url = $config["base_url"]."content/action_show.php?page=".$page;
 
    
 ?>
@@ -31,7 +31,7 @@
 <div id="header">
 <table>
    <tr>
-      <td> <img src="http://cdn.oreilly.com/radar/images/radar_logo.gif"/></td>
+      <td> <img src="logo.png"/></td>
       <td style="padding: 5px"> <h1><?echo $config["site_title"]; ?></h1></td>
    </tr>
 </table>

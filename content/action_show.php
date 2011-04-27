@@ -11,7 +11,7 @@
       "suggest" => "content_suggest.php",      
   );
 
-  $page_to_show = $config["base_url"].$page_lookup[$page];
+  $page_to_show = $config["base_url"]."content/".$page_lookup[$page];
 ?>
 
 <div style="padding: 10px">

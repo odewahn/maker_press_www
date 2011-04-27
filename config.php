@@ -3,7 +3,7 @@
 $config = array (
    "site_title" => "Maker Press Authoring Tool",
    "logo_url" => "logo.png",
-   "base_url" => "http://127.0.0.1/~odewahn/maker_press/content/"
+   "base_url" => "http://127.0.0.1/~odewahn/maker_press/"
 );
 ?>
 
