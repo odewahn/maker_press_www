@@ -23,12 +23,12 @@
   'folder'         : 'uploads',
   'multi'          : true,
   'auto'           : true,
-  'fileExt'        : '*.jpg;*.gif;*.png',
+  'fileExt'        : '*.*',
   'fileDesc'       : 'Image Files (.JPG, .GIF, .PNG)',
   'queueID'        : 'custom-queue',
   'queueSizeLimit' : 3,
   'simUploadLimit' : 3,
-  'removeCompleted': false,
+  'removeCompleted': true,
   'onSelectOnce'   : function(event,data) {
       $('#status-message').text(data.filesSelected + ' files have been added to the queue.');
     },
