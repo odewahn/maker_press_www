@@ -15,5 +15,5 @@
 ?>
 
 <div style="padding: 10px">
-   <iframe src="<?php echo $page_to_show; ?>" width="1100" height="1145" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+   <iframe src="<?php echo $page_to_show; ?>" width="1150" height="1145" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div>

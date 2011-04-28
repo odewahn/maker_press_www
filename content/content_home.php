@@ -18,7 +18,7 @@ window.onload = function(){asciidoc.footnotes();}
 </div>
 <div id="content">
 <div class="paragraph"><p><span class="image">
-<img src="banner.png" alt="scaledwidth=90%" />
+<img src="banner.png" style="width:90%" />
 </span></p></div>
 <div class="paragraph"><p>This is a pilot for an experimental way to develop short-form (less than 100 pages or so) content for O&#8217;Reilly.  Here&#8217;s how it works:</p></div>
 <div class="olist arabic"><ol class="arabic">
@@ -74,7 +74,7 @@ Various tips and tricks.  These are some useful things you should need to know a
 <div class="paragraph"><p><a href="http://www.methods.co.nz/asciidoc/index.html">AsciiDoc</a> is a text document format for writing books, ebooks, documentation, ebooks, and other documents. TIt&#8217;s similar to wiki markup&#8201;&#8212;&#8201;if you can write a wikipedia article, then you&#8217;re pretty much 90% of the way there.  This <a href="http://powerman.name/doc/asciidoc">Asciidoc cheat sheet</a> covers a lot of the nitty gritty, but the following sections will give you an overview of the markup you&#8217;ll use most frequently.</p></div>
 <div class="paragraph"><p>To create a new AsciiDoc page, click the "New Page" button and change the "Edit Mode" from "Markdown" to "AscciDoc," as show in <a href="#edit-mode">[edit-mode]</a>:</p></div>
 <div class="paragraph" id="edit-mode"><div class="title">Change the "edit mode" to "AsciiDoc" when you create a new page</div><p><span class="image">
-<img src="select_format.png" alt="select_format.png" />
+<img src="select_format.png" style="width:80%" alt="select_format.png" />
 </span></p></div>
 <div class="paragraph"><p>Once you&#8217;ve created a page, you can try out the following markup:</p></div>
 <div class="sect2">
@@ -294,7 +294,7 @@ cellspacing="0" cellpadding="4">
 <div class="sectionbody">
 <div class="paragraph"><p>Creating more complex documents is simply a matter of sticthing together smaller sub documents.  While there are a variety of approaches, the one we&#8217;re recommending right now (this is a pilot, after all, so this might change) is to use the special file "home.asciidoc" as a granular TOC or index page.  So, basically, you put all the section headers that describe the piece&#8217;s structure, and then have links out to the content pages.  Keeping the structure in one place (home) will make it easier to move things around as you rewrite and edit.  The idea looks something like <a href="#doc-structure">[doc-structure]</a>.</p></div>
 <div class="paragraph" id="doc-structure"><div class="title">Structure the overall document using headers and links</div><p><span class="image">
-<img src="doc_structure.png" alt="doc_structure.png" />
+<img src="doc_structure.png" alt="doc_structure.png" style="width:90%"/>
 </span></p></div>
 <div class="paragraph"><p>So, how do you do this?  Basically, just put all your structural headings (defined by nesting equal signs at various depths) in the home file, and then put internal links (which are the page name enclosed in double brackets).  Note that you don&#8217;t have to create each content page first&#8201;&#8212;&#8201;you can simply create a link the link.  When you click on it, the new page will be created automatically.  The following sample should give you the basic idea.</p></div>
 <div class="listingblock">
