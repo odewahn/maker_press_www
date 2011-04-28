@@ -18,7 +18,7 @@ window.onload = function(){asciidoc.footnotes();}
 </div>
 <div id="content">
 <div class="paragraph"><p><span class="image">
-<img src="banner.png" style="width:90%" />
+<img src="banner.png" style="width:90%" alt="scaledwidth=90%" />
 </span></p></div>
 <div class="paragraph"><p>This is a pilot for an experimental way to develop short-form (less than 100 pages or so) content for O&#8217;Reilly.  Here&#8217;s how it works:</p></div>
 <div class="olist arabic"><ol class="arabic">
@@ -74,7 +74,7 @@ Various tips and tricks.  These are some useful things you should need to know a
 <div class="paragraph"><p><a href="http://www.methods.co.nz/asciidoc/index.html">AsciiDoc</a> is a text document format for writing books, ebooks, documentation, ebooks, and other documents. TIt&#8217;s similar to wiki markup&#8201;&#8212;&#8201;if you can write a wikipedia article, then you&#8217;re pretty much 90% of the way there.  This <a href="http://powerman.name/doc/asciidoc">Asciidoc cheat sheet</a> covers a lot of the nitty gritty, but the following sections will give you an overview of the markup you&#8217;ll use most frequently.</p></div>
 <div class="paragraph"><p>To create a new AsciiDoc page, click the "New Page" button and change the "Edit Mode" from "Markdown" to "AscciDoc," as show in <a href="#edit-mode">[edit-mode]</a>:</p></div>
 <div class="paragraph" id="edit-mode"><div class="title">Change the "edit mode" to "AsciiDoc" when you create a new page</div><p><span class="image">
-<img src="select_format.png" style="width:80%" alt="select_format.png" />
+<img src="select_format.png" style="width:90%"  alt="select_format.png" />
 </span></p></div>
 <div class="paragraph"><p>Once you&#8217;ve created a page, you can try out the following markup:</p></div>
 <div class="sect2">
@@ -132,13 +132,6 @@ turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi.
      if (y &gt; Y_MAX) {
        Y_MAX = y;
      }
- ----</tt></pre>
-</div></div>
-<div class="paragraph"><p>You can also use the AsciiDoc "include" macro to pull in code files (more on this in <a href="#figures-and-code">[figures-and-code]</a> section):</p></div>
-<div class="listingblock">
-<div class="content">
-<pre><tt> ----
- include::code/example.c[]
  ----</tt></pre>
 </div></div>
 </div>
@@ -286,7 +279,20 @@ cellspacing="0" cellpadding="4">
 <div class="sect1">
 <h2 id="_figures_and_code">Figures and Code</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>TBD</p></div>
+<div class="paragraph"><p>Click on the "Attachments" link in the header to add figures or code samples.  You&#8217;ll be presented with a basic form where you can select and upload files.  Once you&#8217;ve uploaded what you want, click the "Commit Attachments to Repository" link to register them in the repo.  Once you&#8217;ve got the documents uploaded and registered, you can link to them inside your AsciiDoc source.</p></div>
+<div class="paragraph"><p>For figures, the syntax is:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>image::attachment/file_name.png[scalewidth=90%]</tt></pre>
+</div></div>
+<div class="paragraph"><p>You can also use the AsciiDoc "include" macro to pull in code files (more on this in <a href="#figures-and-code">[figures-and-code]</a> section):</p></div>
+<div class="paragraph"><p>Code is similar, except that you use the "include" macro, like this:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt> ----
+ include::code/example.c[]
+ ----</tt></pre>
+</div></div>
 </div>
 </div>
 <div class="sect1">
@@ -294,7 +300,7 @@ cellspacing="0" cellpadding="4">
 <div class="sectionbody">
 <div class="paragraph"><p>Creating more complex documents is simply a matter of sticthing together smaller sub documents.  While there are a variety of approaches, the one we&#8217;re recommending right now (this is a pilot, after all, so this might change) is to use the special file "home.asciidoc" as a granular TOC or index page.  So, basically, you put all the section headers that describe the piece&#8217;s structure, and then have links out to the content pages.  Keeping the structure in one place (home) will make it easier to move things around as you rewrite and edit.  The idea looks something like <a href="#doc-structure">[doc-structure]</a>.</p></div>
 <div class="paragraph" id="doc-structure"><div class="title">Structure the overall document using headers and links</div><p><span class="image">
-<img src="doc_structure.png" alt="doc_structure.png" style="width:90%"/>
+<img src="doc_structure.png" alt="doc_structure.png" style="width:90%" />
 </span></p></div>
 <div class="paragraph"><p>So, how do you do this?  Basically, just put all your structural headings (defined by nesting equal signs at various depths) in the home file, and then put internal links (which are the page name enclosed in double brackets).  Note that you don&#8217;t have to create each content page first&#8201;&#8212;&#8201;you can simply create a link the link.  When you click on it, the new page will be created automatically.  The following sample should give you the basic idea.</p></div>
 <div class="listingblock">
@@ -384,7 +390,7 @@ Don&#8217;t  duplicate an xref name
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2011-04-27 08:33:22 PDT
+Last updated 2011-04-27 22:06:26 PDT
 </div>
 </div>
 </body>
